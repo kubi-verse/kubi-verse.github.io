@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kubi Studios</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+</html>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <a href="#">
+        <img src="assets/images/kubi-logo.svg" alt="Kubi Studios Logo" />
+      </a>
+    </div>
+    <nav class="social-icons">
+      <a href="https://x.com/KubiStudios" aria-label="X">
+        <img src="assets/images/logo.svg" alt="X" />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCVrNaKpWiUHYW6J-w5Y7bFA"
+        aria-label="Youtube"
+      >
+        <img src="assets/images/youtube_social_icon_white.png" alt="Y" />
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <img
+        src="assets/images/banner.png"
+        alt="Game Banner"
+        class="hero-image"
+      />
+    </section>
+    <section class="beta-section">
+      <h2>Beta test now!</h2>
+      <div class="store-icons">
+        <a href="https://kubi.se/ios">
+          <img
+            src="assets/images/app-store.svg"
+            alt="App Store"
+            class="app-store-icon"
+          />
+        </a>
+        <a href="https://kubi.se/android">
+          <img
+            src="assets/images/play-store.svg"
+            alt="Google Play"
+            class="play-store-icon"
+          />
+        </a>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-video">
+          <iframe
+            src="https://www.youtube.com/embed/hqPeBnDDZXA"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <img src="assets/images/photo-grid.png" onclick="openLightbox(0)" />
+        <img src="assets/images/promo.png" onclick="openLightbox(1)" />
+      </div>
+      <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImage" />
+        <div class="caption" id="caption"></div>
+      </div>
+    </section>
+    <!-- <section class="newsletter-section">
+      <h2>Stay Tuned for Updates!</h2>
+      <form class="newsletter-form" action="" method="POST">
+        <input type="email" name="email" placeholder="Email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section> -->
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Powered by <b>Kubiverse</b></p>
+    </div>
+    <img src="assets/images/footer.svg" alt="Grass" class="grass-image" />
+    <img src="assets/images/bunny.png" alt="Bunny" class="bunny-image" />
+  </footer>
+</body>
+
+<script src="assets/js/lightbox.js"></script>
