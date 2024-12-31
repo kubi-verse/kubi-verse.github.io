@@ -193,7 +193,7 @@ ul {
   color: #f04e30;
 }
 
-.newsletter-section {
+/* .newsletter-section {
   text-align: center;
   margin: 40px 20px;
   padding: 20px 0;
@@ -238,15 +238,15 @@ ul {
 }
 
 .newsletter-form button:focus {
-  outline: none; /* Remove the default browser outline */
-  background-color: #f0f0f0; /* Same as hover to prevent lighter gray */
+  outline: none;
+  background-color: #f0f0f0;
   color: #333;
 }
 
 .newsletter-form button:active {
-  background-color: #e0e0e0; /* Slightly darker gray when clicked */
+  background-color: #e0e0e0;
   color: #333;
-}
+} */
 
 .footer {
   position: relative;
