@@ -2,11 +2,114 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-wifth, initial-scale=1.0" />
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0,url=kubiway/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kubiverse</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <p>Redirecting to <a href="/kubiway/">Kubiway</a>...</p>
+    <div class="header-container">
+      <img
+        src="assets/images/Main.png"
+        alt="Kubi Survivors Header"
+        class="header-bg"
+      />
+      <img
+        src="assets/images/parallax8@2x.png"
+        alt="foreground"
+        class="header-overlap"
+        x
+      />
+      <div class="button-container">
+        <a href="https://store.steampowered.com/">
+          <img
+            src="assets/images/wishlist.png"
+            alt="Add to Wishlist"
+            class="button-image"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="background"></div>
+    <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/hqPeBnDDZXA"
+          title="Kubi Survivors Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="video"
+        ></iframe>
+      </div>
+    </div>
+    <div class="features-section">
+      <div class="feature">
+        <h2>SURVIVE</h2>
+        <p>
+          Fight against waves of increasingly powerful enemies. Use your skills
+          and quick reflexes to survive as long as possible in this endless
+          rogue-lite adventure.
+        </p>
+        <img src="assets/images/Vertical.png" alt="" class="features-image" />
+      </div>
+      <div class="feature">
+        <h2>LEVEL UP</h2>
+        <p>
+          Earn experience by defeating enemies and level up to unlock unique
+          abilities. Strategically choose upgrades to suit your playstyle and
+          overcome challenges.
+        </p>
+        <img src="assets/images/Vertical.png" alt="" class="features-image" />
+      </div>
+      <div class="feature">
+        <h2>EXPLORE</h2>
+        <p>
+          Discover new environments, hidden secrets, and powerful artifacts as
+          you progress through procedurally generated levels. Adapt to
+          ever-changing scenarios
+        </p>
+        <img src="assets/images/Vertical.png" alt="" class="features-image" />
+      </div>
+    </div>
+     <section class="gallery-section">
+      <h2>GALLERY</h2>
+      <div class="gallery-grid">
+        <img src="assets/images/Vertical.png" onclick="openLightbox(0)" />
+        <img src="assets/images/Vertical.png" onclick="openLightbox(1)" />
+        <img src="assets/images/Vertical.png" onclick="openLightbox(2)" />
+        <img src="assets/images/Vertical.png" onclick="openLightbox(4)" />
+        <img src="assets/images/monday.gif" onclick="openLightbox(5)">
+      </div>
+      <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImage" />
+        <div class="caption" id="caption"></div>
+      </div>
+    </section>
   </body>
+  <footer class="footer-section">
+    <div class="social-icons">
+      <a href="https://x.com/KubiStudios" target="_blank" aria-label="X">
+        <div class="social-icon">
+          <img src="assets/images/x-logo/logo-black.png" alt="X" class="x-icon"/>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/channel/UCVrNaKpWiUHYW6J-w5Y7bFA" target="_blank" aria-label="X">
+        <div class="social-icon">
+          <img src="assets/images/youtube.png" alt="Youtube" class="youtube-icon"/>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/channel/UCVrNaKpWiUHYW6J-w5Y7bFA" target="_blank" aria-label="X">
+        <div class="social-icon">
+          <img src="assets/images/instagram.png" alt="Instagram" class="instagram-icon"/>
+        </div>
+      </a>
+    </div>
+    <div class="footer-content">
+      <p>&copy; 2025 Kubiverse. All Rights Reserved.</p>
+    </div>
+  </footer>
 </html>
+
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/parallax.js"></script>
